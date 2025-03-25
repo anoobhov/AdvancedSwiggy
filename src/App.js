@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./Components/Header";
 import Fooddetails from "./Components/Fooddetails"
-import { Component } from "lucide-react";
+import GroceryOption from "./Components/GroceryOption";
 
 function App()
 {
@@ -10,6 +10,7 @@ function App()
         <>
 <Header/>
 <Fooddetails></Fooddetails>
+<GroceryOption></GroceryOption>
 </>
     )
 
