@@ -4,9 +4,9 @@ import GroceryCard from "./GroceryCard";
 export default function GroceryOption()
 {
     return (
-        <div className="mt-20 w-[80%] container mx-auto">
+        <div className="w-[80%] container mx-auto mt-20">
             <h1>Shop Groceries on instamart</h1>
-            <div className="w-[80%] container mx-auto flex flex-wrap mt-20 gap-3">
+            <div className="container mx-auto flex flex-nowrap overflow-x-auto mt-5 gap-3">
                 {
                     GrocerGridCard.map((foodData)=><GroceryCard key={foodData.id} foodData={foodData}></GroceryCard>)
                 }
