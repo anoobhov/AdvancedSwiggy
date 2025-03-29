@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./Components/Header";
 import Fooddetails from "./Components/Fooddetails"
 import GroceryOption from "./Components/GroceryOption";
 import DineOption from "./Components/DineOption";
+import Restaurant from "./Components/Restaurants";
 function App()
 {
     return(
@@ -12,6 +13,7 @@ function App()
 <Fooddetails></Fooddetails>
 <GroceryOption></GroceryOption>
 <DineOption/>
+<Restaurant/>
 </>
     )
 
