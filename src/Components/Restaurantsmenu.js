@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import Menu from "./Menu";
 
 export default function RestaurantMenu()
 {
     let {id} = useParams()
-    console.log(id)
+    // console.log(id)
 
-    const [RestData,setRestData] =  useState(null)
+    const [RestData,setRestData] =  useState([])
 
     useEffect(()=>{
         async function fetchData() {
@@ -20,9 +21,15 @@ export default function RestaurantMenu()
     },[])
     console.log(RestData)
 
+    // const menuItems=RestData.card.card
+    // console.log(menuItems)
     return(
-        <>
-            <h1>{id}</h1>
-        </>
+        
+        <div className="w-[80%] mx-auto mt-20">
+          {
+            RestData.map((menuItems)=><Menu key={menuItems?.card?.card?.title} menuItems={menuItems?.card?.card}></Menu>)
+          }
+        </div>
+        
     )
 }
