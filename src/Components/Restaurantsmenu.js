@@ -31,11 +31,11 @@ export default function RestaurantMenu()
 
       <div>
 
-      <div className="w-[80%] mx-auto mt-20 mb-20">
-        <Link to={`/city/delhi/${id}/search`}>
-          <p className="w-full text-center py-4 rounded-4xl bg-gray-200 text-2xl">Search for Dishes</p>
-        </Link>
-      </div>
+    {/* <div className="w-[80%] mx-auto mt-20 mb-20">
+      <Link to={`/city/delhi/${id}/search`}>
+        <p className="w-full text-center py-4 rounded-4xl bg-gray-200 text-2xl">Search for Dishes</p>
+      </Link>
+    </div> */}
 
       <div className="w-[80%] mx-auto mt-20 mb-20">
         <button className={`text-2xl py-2 px-8 mr-4 border rounded-2xl ${selected==='veg'?"bg-green-300":"bg-gray-200"}`} onClick={()=>setSelected(selected==='veg'?null:"veg")}>Veg</button>
